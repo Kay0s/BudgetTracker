@@ -44,7 +44,7 @@ self.addEventListener("activate", (evt) => {
 // fetch
 self.addEventListener("fetch", (evt) => {
   // cache successful requests to the API
-  if (evt.request.url.includes("/api/transaction/bulk")) {
+  if (evt.request.url.includes("/api/transaction")) {
     evt.respondWith(
       caches
         .open(DATA_CACHE_NAME)
