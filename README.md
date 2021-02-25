@@ -1,10 +1,10 @@
-# Eat That Burger - Restaurant App Using Express, MySQL, Node, Express, Handlebars and a homemade ORM
+# PWA Budget Tracker - Online/Offline Budget App
 
 ![badge](https://img.shields.io/badge/License-mit-blue)
 
 ## Overview
 
-Eat that Burger is a restaurant app the lets users to input the names of burgers they'd like to eat.
+PWA Budget Tracker is a budget tracker app that allows a user to track their deposits and expenses, whether online or offline, using IndexedDB, service-worker.js, manifest-webmanifest, Mongoose and Atlas.
 
 ## Table of Contents
 
@@ -20,48 +20,41 @@ Eat that Burger is a restaurant app the lets users to input the names of burgers
 
 ## Description
 
-To dynamically and quickly create and delete burger data, Express, MySQL, Heroku and Handlebars were utilized to:
+To online create deposits and expenses data, Express, Mongo with a Mongoose schema, Heroku were utilized to:
 
-- Serve and display a working data base of burgers available to eat, those that have been devoured and the ability to
-  delete burgers.
+- Serve and display a chart.js chart of deposits and expenses.
+
+Offline deposits and expenses data are served as chart.js using IndexedDB, service-worker.js and manifest-webmanifest.
 
 ## Installation
 
-1. Create a .gitignore file and include node_modules and .DS store. This ensures that the node_modules directory isn't
-   tracked or uploaded to GitHub.
-2. Use the command-line, npm i, to install Express, Express-Handlebars, and mysql npm.
-3. To start creating, devouring, and deleting burgers using Express, use the command, node server.js and navigate in the
-   web browser to localhost:8080.
+1. Create a .gitignore file and include node_modules, .DS store and .env. This ensures that the node_modules directory and your Atlas credentials aren't tracked or uploaded to GitHub.
+2. Use the command-line, npm i, to install Express, dotenv, and mongoose npm, morgan npm and compression npm.
+3. To start tracking deposits and expenses using Express, use the command, node server.js and navigate in the web browser to localhost:8080.
 
 ## Usage
 
-- Express and Heroku and used to serve and display to the the user Handlebars HTML templated info of their created and
-  devoured burgers.
-- Handlebars is used to render the HTML.
-- Once the user's information regarding:
-  - created burger is inputed into the input box:
-- An Handlebars HTML file with the user's added burger and unique id is created.
-- User's burgers can be deleted based on the id in the MySQL database and the delete routes.
+- Express, Heroku and chart.js are used to serve and display to the user
+- their expenses online and offline
 
 ## Test
 
-Test the different HTML pages/positions on the local host using Express, to ensure that the data is saving and the MySQL
-database is accessed.
+Test the different routes on the local host using Morgan npm, to ensure that they are firing and the Mongoose database is accessed.
 
 ## Deployed
 
-- \*[Deployed website](https://protected-lowlands-49340.herokuapp.com/)
-- \*[Portfolio](https://kay0s.github.io/Dynamic-Portfolio/portfolio.html)
-- \*[GitHub Repository](https://github.com/Kay0s/burger) ![Screenshot of Eat That Burger App](./EatThatBurger.png)
+- \*[Deployed website](https://still-crag-09430.herokuapp.com/)
+- \*[GitHub Repository](https://github.com/Kay0s/BudgetTracker) ![Screenshot of Fitness Tracker App](./budgetTracker.jpg)
 
-### Screenshot of Homemade ORM Code
+### Screenshot of Files Cached
 
-![Screenshot of Homemade ORM Code](./codeScreenshot.jpg)
+![Screenshot of Files Cached](./codeScreenshot.jpg)
 
 ## Tools
 
-- Handlebars.js
-- MySQL
+- mongo DB
+- dotenv npm
+- Mongoose
 - HTML
 - CSS
 - JavaScript
@@ -70,19 +63,25 @@ database is accessed.
 - Heroku
 - Express
 - node.js
-- homemade ORM
+- morgan npm
+- service-worker.js
+- manifest-webmanifest
+- compression npm
+- chart.js
+- Bootstrap
+- Font Awesome
 
 ## Research
 
-- [Handlebars](https://handlebarsjs.com/)
-- [Deploying with MySQL- Heroku](https://devcenter.heroku.com/articles/jawsdb)
-- [Unsplash - Burger Image - Ilya Mashkov](https://unsplash.com/photos/_qxbJUr9RqI)
+- [Google Developes - Service Worker](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker)
+- [MDN Web Docs - Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+- [Chart.js](https://www.chartjs.org/)
 
 ## Questions
 
 - [Email](hamilton.kristina@gmail.com)
 - [GitHub Profile](https://github.com/Kay0s)
-- [GitHub Repository](https://github.com/Kay0s/burger)
+- [GitHub Repository](https://github.com/Kay0s/BudgetTracker)
 
 ## License
 
